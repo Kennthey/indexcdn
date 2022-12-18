@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Kennthy</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="keywords" content="Kennthy主页">
+    <meta name="description" content="Kennthy的个人主页">
+    <link rel="icon" type="image/x-icon" href="https://kennthey.ml/favicon.ico">
+    <link rel="stylesheet" href="https://kennthey.ml/statics/css/main.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="https://kennthey.ml/statics/js/jquery.min.js"></script>
+    <script src="https://kennthey.ml/statics/js/aplayer.min.js"></script>   
+  </head>
+  <body>
+    <div class="loading">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+    <script>
+        var picnum = parseInt(Math.random()*39+1);
+        document.write('<div class="bak" style="background-image: url(https://kennthey.ml/statics/img/'+picnum+'.jpg);"></div>');
+    </script>
+    <main>
+        <div class="content">
+            <div class="left">
+                <div class="avatar">
+                    <img src="https://kennthey.ml/statics/img/1111.png">
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a goto="#home" class="active">HOME</a>
+                    </li>
+                    <li>
+                        <a goto="#archives">ARCHIVES</a>
+                    </li>
+                    <li>
+                        <a goto="#about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a goto="#donate">DONATE</a>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    Made with
+                    <i class="fa fa-heart"></i> by
+                    <br>
+                    <a href="https://fly.moe" target="_blank">Fly3949</a>
+                </div>
+            </div>
+            <div class="right">
+                <section id="home" class="active">
+                    <h1>辞·Kennthy</h1>
+                    <div class="items">
+                        <a href="https://blog.kennthey.ml" target="_blank" rel="noopener">
+                            <i class="fa fa-home"></i>
+                            <span>Blog</span>
+                        </a>
+                        <a href="https://github.com/" target="_blank" rel="noopener">
+                            <i class="fa fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:kennthey@outlook.com" target="_blank" rel="noopener">
+                            <i class="fa fa-envelope"></i>
+                            <span>E-Mail</span>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener">
+                            <i class="fa fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                            <i class="fa fa-facebook-official"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://t.me/" target="_blank" rel="noopener">
+                            <i class="fa fa-telegram"></i>
+                            <span>Telegram</span>
+                        </a>
+                    </div>
+                </section>
+                <section id="archives">
+                    <h1>近期文章</h1>
+                    <ul class="archive-list">
+                        <li>Loading...</li>
+                    </ul>
+                </section>
+                <section id="about">
+                    <h1>关于</h1>
+                    <p>
+                        我，是一只菜狗<br>
+                        学生狗 / 没啥特长 / 宅 / <del>变态</del>loli控 / 2.5次元 / <br>
+                        猫/瞎折腾 / 搞事情 / <a href="https://blog.kennthey.ml" target="_blank">...</a>
+                    </p>
+                </section>
+                <section id="donate">
+                    <h1>求帮助吃土的Kennthy！</h1>
+                    <div class="donate-img-box">
+                        <a href="https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQxYXXhgsY0KKEiAY%3D_xxx_sign&u=2966799045&n=%E8%BE%9E%C2%B7kennthy" target="_blank" rel="noopener">
+                            <img src="https://kennthey.ml/statics/img/poooor.png" width="220" height="240" style="width: 220px; height: 240px;"/> 
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer>
+        <br /> 
+        <p id="hitokoto">Loading...</p>
+        <br />
+
+        <div id="hitokoto">
+  <div>
+    <!--运行时间代码开始-->
+<span id="sitetime" style="color: #ffffff;"></span>
+<script language=javascript>
+    function siteTime(){
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth()+1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        var t1 = Date.UTC(2021,7,27,5,20,13); //北京时间2021-7-27 5:20:13
+        var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+        var diff = t2-t1;
+        var diffYears = Math.floor(diff/years);
+        var diffDays = Math.floor((diff/days)-diffYears*365);
+        var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+        var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+        var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+        document.getElementById("sitetime").innerHTML="在风里雨里走过："+diffYears+"年"+diffDays+"天"+diffHours+"时"+diffMinutes+"分钟"+diffSeconds+"秒";
+    }
+    siteTime();
+</script>	
+    <!--运行时间代码结束-->
+            <div class="copyright-mobile">
+                Made with
+                <i class="fa fa-heart"></i> by
+                <a href="https://fly.moe" target="_blank">Fly3949</a>
+            </div>
+
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<meting-js
+        id="6895337349"//歌单ID
+        lrc-type="0"
+        server="netease"//参考https://github.com/metowolf/MetingJS
+        order="list"//歌单加载顺序，list:按照原歌单排列；random：打乱顺序排列
+        type="playlist"
+        fixed="true"
+        autoplay="true"
+        list-olded="true">
+</meting-js>
+
+        </footer>
+        <div class="aplayer-footer">
+            <div class="ap-f" id="ap-f"></div>
+        </div>
+    </main>
+    <script src="https://kennthey.ml/statics/js/main.js"></script>
+  </body>
+</html>
