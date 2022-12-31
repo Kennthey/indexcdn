@@ -23,6 +23,11 @@ body{font-family:Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica Neue,Helveti
 main{position:relative}
 main .content{display:flex;margin:2em 1em;background:hsla(0,0%,100%,.8);text-align:center;border-radius:5px;animation:content .5s 2.2s both;box-shadow:0 0 20px rgba(0,0,0,.2);overflow:hidden;width:50em;height:30em}
 /* Left Box */
+
+/*头像呼吸光环和鼠标悬停旋转放大开始*/
+.avatar{border-radius: 50%; animation: light 4s ease-in-out infinite; transition: 0.5s;}.avatar:hover{transform: scale(1.15) rotate(720deg);}@keyframes light{0%{box-shadow: 0 0 4px #f00;} 25%{box-shadow: 0 0 16px #0f0;} 50%{box-shadow: 0 0 4px #00f;} 75%{box-shadow: 0 0 16px #0f0;} 100%{box-shadow: 0 0 4px #f00;}}
+/*头像呼吸光环和鼠标悬停旋转放大结束*/
+
 .left{width:20%;background:rgba(0,187,255,.7);padding:1em;display:flex;flex-direction:column}
 .left .avatar img{border-radius:100%;border:5px solid #fff}
 .left .menu{margin-top:2em;flex:1}
