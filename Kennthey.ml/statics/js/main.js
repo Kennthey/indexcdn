@@ -73,7 +73,7 @@ $(function(){
             window.aplayers.push(a)
         }
     })
-})
+})*/
 
 // 对Date的扩展，将 Date 转化为指定格式的String
 // 月(M)、日(d)、小时(h)、分(m)、秒(s)、季度(q) 可以用 1-2 个占位符， 
@@ -95,7 +95,7 @@ Date.prototype.Format = function(fmt){ //author: meizz
     for(var k in o)
         if(new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
     return fmt;
-}*/
+}
 
 $(document).ready(function(){
     getAchives();
