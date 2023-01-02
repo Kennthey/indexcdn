@@ -1,4 +1,5 @@
-﻿$('.menu a').click(function(){
+header("Access-Control-Allow-Origin: *");
+$('.menu a').click(function(){
     target = $(this).attr('goto');
     switchTo(target);
     $('.menu li a').each(function(){
