@@ -52,7 +52,7 @@ function write(text){
         gethitokoto();
     }
 }
-
+/*
 $(function(){
     $.ajax({
         url:"https://api.mlwei.com/music/api/wy/?key=523077333&cache=1&type=songlist&id=6895337349",
@@ -95,7 +95,7 @@ Date.prototype.Format = function(fmt){ //author: meizz
     for(var k in o)
         if(new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
     return fmt;
-}
+}*/
 
 $(document).ready(function(){
     getAchives();
